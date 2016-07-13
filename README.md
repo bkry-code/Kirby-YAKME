@@ -12,11 +12,13 @@
 
 ### What is it?
 
-**[Kirby - YAKME](https://github.com/1n3JgKl9pQ6cUMrW/kirby-yakme)** is (Yet Another Kirby Markdown Editor) a markdown editor for Kirby.
+**[Kirby - YAKME](https://github.com/1n3JgKl9pQ6cUMrW/kirby-yakme)** (Yet Another Kirby Markdown Editor) is a markdown editor for Kirby.
 
 It uses the **excellent** Simple MDE (editor) from **https://simplemde.com/** as it's core-engine.
 
 More info about Kirby can be found at **http://getkirby.com**
+
+More info about this plug-in can be found at **https://forum.getkirby.com/t/kirby-yakme-yet-another-kirby-markdown-editor/4677/13?u=1n3jgkl9pq6cumrw**
 
 ### Installation
 
