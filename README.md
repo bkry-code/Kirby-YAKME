@@ -21,6 +21,15 @@ More info about Kirby can be found at **http://getkirby.com**
 
 ### Usage
 
+The field acts like a normal textarea, but with some extra's;
+
+1. Live preview toggle (eye icon).
+2. Hide markup-codes (hashtag icon).
+3. Side by side editing (column icon).
+4. Fixed font option (font icon).
+5. Full support of all markdown codes ( http://www.markitdown.net/markdown )
+
+The fixed font is helpfull when creating tables or entering codes.
 
 ### Config
 
