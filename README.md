@@ -44,7 +44,15 @@ fields:
     type:  yakme
 ```
 
-The fieldtype is ```yakme``` and it accepts no additional options (besides the one you can set in ```config.php``` and by setting the field-preferences for each field alone).
+The fieldtype is ```yakme``` and it accepts no additional options (besides the one you can set in ```config.php``` and by setting the field-preferences ( _font_ / _wysiwyg_ ) for each field alone).
+
+Once set, the field can be rendered like this;
+
+```
+<?php
+    echo $page->yakme_example()->kirbytext();
+?>
+```
 
 ****
 
