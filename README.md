@@ -28,7 +28,7 @@ More info about Kirby can be found at **http://getkirby.com**
 The field acts like a normal textarea, but with some extra's;
 
 1. Live preview toggle (eye icon).
-2. Hide markup-codes (hashtag icon).
+2. Hide markdown codes (hashtag icon).
 3. Side by side editing (column icon).
 4. Fixed font option (font icon).
 5. Full support of all markdown codes ( http://www.markitdown.net/markdown ).
@@ -65,7 +65,10 @@ The settings defaults to 320px - so that's used when no settings are available.
 - Image drag / drop is not (yet) supported.
 - Kirby-tags are supported, but not rendered in the live-preview.
 - Images are only rendered in the live-preview with a full url.
+- Turning of the markdown codes (hastag icon) do not show if text is selected / can hide the cursor.
 
 ****
+
+![Kirby - YAKME](kirby_yakme-capture.gif "Kirby - YAKME")
 
 *Kirby YAKME - yet another kirby markdown editor.*
