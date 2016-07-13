@@ -2,6 +2,8 @@
 
 ![Kirby - YAKME](kirby_yakme-logotype.png "Kirby - YAKME")
 
+****
+
 #### Version 1.0.0 - 2016-07-13
 
 - Initial Public Offering.
@@ -29,9 +31,16 @@ The field acts like a normal textarea, but with some extra's;
 2. Hide markup-codes (hashtag icon).
 3. Side by side editing (column icon).
 4. Fixed font option (font icon).
-5. Full support of all markdown codes ( http://www.markitdown.net/markdown )
+5. Full support of all markdown codes ( http://www.markitdown.net/markdown ).
 
 The fixed font is helpfull when creating tables or entering codes.
+
+Every instance of a YAKME-field can have individual preferences;
+
+1. Fixed font or default font.
+2. Toggle (WYSIWYG) markdown codes.
+
+These settings are saved to the local machine in the localstorage of your browser.
 
 ### Config
 
