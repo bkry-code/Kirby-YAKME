@@ -27,12 +27,33 @@ More info about this plug-in can be found at **https://forum.getkirby.com/t/kirb
 
 ### Usage
 
+A sample blueprint is included, as an introduction for the basic set-up.
+
+```
+title: Page
+pages: true
+files: true
+fields:
+
+  title:
+    label: Title
+    type:  text
+
+  yakme_example:
+    label: Yakme - Example
+    type:  yakme
+```
+
+The fieldtype is ```yakme``` and it accepts no additional options (besides the one you can set in ```config.php``` and by setting the field-preferences for each field alone).
+
+****
+
 The field acts like a normal textarea, but with some extra's;
 
-1. Live preview toggle (eye icon).
-2. Hide markdown codes (hashtag icon).
-3. Side by side editing (column icon).
-4. Fixed font option (font icon).
+1. Live preview toggle (**eye icon**).
+2. Hide markdown codes (**hashtag icon**).
+3. Side by side editing (**column icon**).
+4. Fixed font option (**font icon**).
 5. Full support of all markdown codes ( http://www.markitdown.net/markdown ).
 
 The fixed font is helpfull when creating tables or entering codes.
