@@ -1,5 +1,7 @@
 # [Kirby - YAKME](https://github.com/1n3JgKl9pQ6cUMrW/kirby-yakme)
 
+![Kirby - YAKME](kirby_yakme-logotype.png "Kirby - YAKME")
+
 #### Version 1.0.0 - 2016-07-13
 
 - Initial Public Offering.
@@ -56,7 +58,5 @@ The settings defaults to 320px - so that's used when no settings are available.
 - Images are only rendered in the live-preview with a full url.
 
 ****
-
-![Kirby - YAKME](kirby-yakme.png "Kirby - YAKME")
 
 *Kirby YAKME - yet another kirby markdown editor.*
