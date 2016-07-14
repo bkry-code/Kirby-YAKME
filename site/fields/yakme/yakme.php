@@ -25,7 +25,11 @@ class YakmeField extends TextField {
     $yakme_height = $yakme_height < 1 ? $yakme_height = 'auto' : $yakme_height . 'px';
     $yakme_height = '<style>.yakme_wrapper .CodeMirror, .yakme_wrapper .CodeMirror-scroll {min-height: ' . $yakme_height . ';height: ' . $yakme_height . '}</style>';
 
-    return $yakme_height . $content;
+/* Check markdown-images (not the Kirby-tag images) for their validity */
+
+    $yakme_images = c::get('yakme_images', 0);
+    $yakme_images = '<script>var yakme_images = "' . $yakme_images . '";</script>';
+    return $yakme_height . $yakme_images . $content;
 
   }
 

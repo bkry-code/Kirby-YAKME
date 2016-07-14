@@ -8,6 +8,11 @@
 
 - Initial Public Offering.
 
+#### Version 1.1.5 - 2016-07-14
+
+- Small adjustmens / fixes.
+- Optional image-check for markdown-images.
+
 ****
 
 ### What is it?
@@ -75,7 +80,7 @@ These settings are saved to the local machine in the localstorage of your browse
 
 ### Config
 
-By default, no `config` is needed. But you can set the height of the YAKME-field;
+By default, no `config` is needed. But you can set the height of the YAKME-field and perform an image-check;
 
 ```
 c::set('yakme_height', 0);
@@ -90,6 +95,21 @@ c::set('yakme_height', 480);
 This will set a "fixed-height" for every field; the size is in pixels and when the content becomes to large, a scrollbar will appear.
 
 The settings defaults to 320px - so that's used when no settings are available.
+
+****
+
+```
+c::set('yakme_images', 0);
+```
+
+Markdown-images will not be checked for validity, when rendered in the live-preview.
+
+```
+c::set('yakme_images', 1);
+```
+A check will be performed when previewing markdown-images. When an images does not exist, a error-sign is showed.
+
+**Please note, Kirby image-tags can not be validated.**
 
 ###Known issues###
 
