@@ -123,3 +123,7 @@ A check will be performed when previewing markdown-images. When an images does n
 ![Kirby - YAKME](kirby_yakme-capture.gif "Kirby - YAKME")
 
 *Kirby YAKME - yet another kirby markdown editor.*
+
+![Kirby - YAKME](kirby_yakme-imagecheck.gif "Kirby - YAKME, imagecheck")
+
+*Kirby YAKME - optional imagecheck enabled.*
