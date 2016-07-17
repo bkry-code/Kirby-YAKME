@@ -10,10 +10,6 @@
   z-index: 0;
 }
 
-.yakme_wrapper .CodeMirror-code {
-  margin: 0 0 2em 0;
-}
-
 .yakme_wrapper .CodeMirror.CodeMirror-fullscreen,
 .yakme_wrapper .CodeMirror-fullscreen .CodeMirror-scroll {
   height: 100%;
@@ -39,6 +35,11 @@
 .yakme_wrapper .editor-preview-side {
   border-top-width: 2px;
   top: 88px;
+}
+
+.yakme_wrapper .CodeMirror-scroll {
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
 
 /* Toolbar */
