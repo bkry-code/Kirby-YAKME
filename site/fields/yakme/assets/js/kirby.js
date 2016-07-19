@@ -32,7 +32,6 @@ var yakme_text = function(index, data) {
 var yakme_ini = function (index) {
 
   var yakme_field = $('.yakme_editor:eq(' + index + ')');
-
   var yakme_id = yakme_field.attr('id');
 
   var simplemde = new SimpleMDE( {
@@ -139,6 +138,17 @@ var yakme_ini = function (index) {
       return;
     }
 
+  });
+
+/* Ref 1. http://www.elated.com/articles/drag-and-drop-with-jquery-your-essential-guide/ */
+/* Ref 2. http://www.w3schools.com/html/html5_draganddrop.asp */
+
+  yakme_field.parent().droppable({
+    hoverClass: 'yakme_field_over',
+    drop: function(e, ui) {
+      var draggable = ui.draggable;
+      yakme_text(index, draggable.data('text'));
+    }
   });
 
 }

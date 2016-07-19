@@ -10,6 +10,10 @@
   z-index: 0;
 }
 
+.yakme_wrapper.yakme_field_over .CodeMirror {
+  border-color: #8dae28;
+}
+
 .yakme_wrapper .CodeMirror.CodeMirror-fullscreen,
 .yakme_wrapper .CodeMirror-fullscreen .CodeMirror-scroll {
   height: 100%;
