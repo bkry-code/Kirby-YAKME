@@ -13,6 +13,11 @@
 - Small adjustmens / fixes.
 - Optional image-check for markdown-images.
 
+#### Version 1.2.1 - 2016-07-25
+
+- (Basic) support of image drag/drop from the assets-sidebar.
+- Small adjustmens / fixes.
+
 ****
 
 ### What is it?
@@ -113,8 +118,7 @@ A check will be performed when previewing markdown-images. When an images does n
 
 ###Known issues###
 
-- Image drag / drop is not (yet) supported.
-- Kirby-tags are supported, but not rendered in the live-preview.
+- Kirby-tags are supported, but not rendered in the live-preview (working on it...).
 - Images are only rendered in the live-preview with a full url.
 - Turning of the markdown codes (hastag icon) do not show if text is selected / can hide the cursor.
 
