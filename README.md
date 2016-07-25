@@ -16,7 +16,7 @@
 #### Version 1.2.1 - 2016-07-25
 
 - (Basic) support of image drag/drop from the assets-sidebar.
-- Small adjustmens / fixes.
+- Small adjustments / fixes.
 
 ****
 
@@ -131,3 +131,7 @@ A check will be performed when previewing markdown-images. When an images does n
 ![Kirby - YAKME](kirby_yakme-imagecheck.gif "Kirby - YAKME, imagecheck")
 
 *Kirby YAKME - optional imagecheck enabled.*
+
+![Kirby - YAKME](kirby_yakme-drag-and-drop.gif "Kirby - YAKME, drag/drop")
+
+*Kirby YAKME - asset drag and drop.*
