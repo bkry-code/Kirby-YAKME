@@ -128,11 +128,16 @@
 
 .yakme_wrapper .CodeMirror pre {
   background: #fff;
+  padding: 1px 0;
 }
 
 .yakme_wrapper span.CodeMirror-selectedtext {
   background: #444 !important;
   color: #eee !important;
+}
+
+.yakme_wrapper .CodeMirror-selected {
+  background:#fff !important;
 }
 
 .yakme_wrapper .CodeMirror .CodeMirror-code .cm-link {
@@ -148,6 +153,15 @@
 
 .yakme_wrapper .CodeMirror .CodeMirror-code .cm-tag {
   color: #8dae28;
+}
+
+.yakme_wrapper .CodeMirror-lines span.cm-header-1,
+.yakme_wrapper .CodeMirror-lines span.cm-header-2,
+.yakme_wrapper .CodeMirror-lines span.cm-header-3,
+.yakme_wrapper .CodeMirror-lines span.cm-header-4,
+.yakme_wrapper .CodeMirror-lines span.cm-header-5,
+.yakme_wrapper .CodeMirror-lines span.cm-header-6 {
+  line-height: 125%;
 }
 
 .yakme_wrapper.yakme_fixed .CodeMirror-lines span.cm-header-1 {

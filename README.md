@@ -89,6 +89,7 @@ These settings are saved to the local machine in the localstorage of your browse
 | -------- | -------- | 
 | Ctrl-' | Blockquote | 
 | Ctrl-B | Bold | 
+| Ctrl-D | Delete line | 
 | Ctrl-E | Clear | 
 | Ctrl-H | Heading - | 
 | Ctrl-I | Italic | 
