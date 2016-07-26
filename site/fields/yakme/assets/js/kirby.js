@@ -12,7 +12,7 @@ var yakme_text = function(index, data) {
   var line = doc.getLine(cursor.line);
   var pos = {
       line: cursor.line,
-      ch: line.length - 1
+      ch: line.length
   }
 
   doc.replaceRange(data, pos);
@@ -50,15 +50,15 @@ var yakme_ini = function (index) {
                       '|',
                     'link',
                     'image',
+                      '|',
                     {
                       name: 'kirby_mail',
                       action: function yakme_txt() {
                         yakme_text(index, '(email: mail@example.com text: mail me)');
                       },
-                      className: 'fa fa-envelope',
+                      className: 'fa fa-envelope kirby',
                       title: 'Kirby Mail',
                     },
-                      '|',
                     {
                       name: 'kirby_url',
                       action: function yakme_txt() {
@@ -150,7 +150,16 @@ var yakme_ini = function (index) {
       yakme_text(index, draggable.data('text'));
     }
   });
+/*
+  yakme_field.parent().on("keyup", function() {
 
+    $(".CodeMirror-line span", this).each(function() {
+        $(this).html($(this).html().replace("e", "# e"));
+        console.log($(this).text());
+    });
+
+  } );
+*/
 }
 
 /* Set | save the preferences for each field */

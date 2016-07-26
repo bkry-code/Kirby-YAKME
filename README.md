@@ -18,6 +18,11 @@
 - (Basic) support of image drag/drop from the assets-sidebar.
 - Small adjustments / fixes.
 
+#### Version 1.2.2 - 2016-07-26
+
+- Kirby-tag insert fix (cursor position).
+- Visual adjustments for the toolbar.
+
 ****
 
 ### What is it?

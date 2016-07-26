@@ -50,13 +50,19 @@
 /* Toolbar */
 
 .yakme_wrapper .editor-toolbar.disabled-for-preview a:not(.no-disable) {
-  color: #aaa !important;
+  color: #bbb !important;
+  background: #fafafa !important;
+  border-color: #fff !important;
 }
 
 .yakme_wrapper .editor-toolbar a {
   margin: 0 0 0 3px;
   border-radius: 0;
-  color: #000;
+  color: #666 !important;
+}
+
+.yakme_wrapper .editor-toolbar .separator + a {
+  margin: 0 0 0 -1px;
 }
 
 .yakme_wrapper.yakme_fixed .editor-toolbar .fa-font,
@@ -68,15 +74,18 @@
 .yakme_wrapper .editor-toolbar a.active,
 .yakme_wrapper .editor-toolbar a:hover {
   border-color: #ddd;
+  color: #111 !important;
 }
 
 .yakme_wrapper .editor-toolbar a.kirby {
-  background: #f4f4f4;
-  color: #666 !important;
+  background: #dfe9be;
+  color: #93ab4e !important;
+  border-color: #93ab4e;
 }
 
 .yakme_wrapper .editor-toolbar a.kirby:hover {
-  background: #ededed;
+  background: #93ab4e;
+  color: #fff !important;
 }
 
 .yakme_wrapper .editor-toolbar i.separator {
