@@ -83,6 +83,27 @@ Every instance of a YAKME-field can have individual preferences;
 
 These settings are saved to the local machine in the localstorage of your browser.
 
+### Shortcuts
+
+| **Shortcut** | **Action** |
+| -------- | -------- | 
+| Ctrl-' | Blockquote | 
+| Ctrl-B | Bold | 
+| Ctrl-E | Clear | 
+| Ctrl-H | Heading - | 
+| Ctrl-I | Italic | 
+| Ctrl-K | Link | 
+| Ctrl-L | Unordered List | 
+| Ctrl-P | Preview | 
+| Ctrl-Alt-C | Code | 
+| Ctrl-Alt-I | Image | 
+| Ctrl-Alt-L | Ordered List | 
+| Shift-Ctrl-H | Heading + | 
+| F9 | Sideview |
+| F11 | Fullscreen |
+
+> Mac users, please use `cmd` in stead of `ctrl`
+
 ### Config
 
 By default, no `config` is needed. But you can set the height of the YAKME-field and perform an image-check;
