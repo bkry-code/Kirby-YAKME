@@ -23,6 +23,11 @@
 - Kirby-tag insert fix (cursor position).
 - Visual adjustments for the toolbar.
 
+#### Version 1.2.5 - 2016-07-30
+
+- Option to style the editor / preview.
+- Fixes and tunes.
+
 ****
 
 ### What is it?
@@ -112,7 +117,7 @@ These settings are saved to the local machine in the localstorage of your browse
 
 ### Config
 
-By default, no `config` is needed. But you can set the height of the YAKME-field and perform an image-check;
+By default, no `config` is needed. But you can set the styling / height of the YAKME-field and perform an image-check;
 
 ```
 c::set('yakme_height', 0);
@@ -143,6 +148,13 @@ A check will be performed when previewing markdown-images. When an images does n
 
 **Please note, Kirby image-tags can not be validated.**
 
+****
+
+```
+c::set("panel.stylesheet", "assets/css/yakme.css");
+```
+This will load the (demo) css-file and style both the editor and previewmode.
+
 ###Known issues###
 
 - Kirby-tags are supported, but not rendered in the live-preview (working on it...).
@@ -162,3 +174,7 @@ A check will be performed when previewing markdown-images. When an images does n
 ![Kirby - YAKME](kirby_yakme-drag-and-drop.gif "Kirby - YAKME, drag/drop")
 
 *Kirby YAKME - asset drag and drop.*
+
+![Kirby - YAKME](kirby_yakme-styling.gif "Kirby - YAKME, styling")
+
+*Kirby YAKME - styling.*
