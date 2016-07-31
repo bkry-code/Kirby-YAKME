@@ -70,6 +70,16 @@
 /* 2. Toolbar */
 /* ---------------------- */
 
+
+.yakme_wrapper .editor-toolbar {
+  border-radius: 0;
+  background: #fff;
+  opacity: 1 !important;
+  border: 2px solid #ddd;
+  border-bottom: none;
+  padding: 2px;
+}
+
 .yakme_wrapper .editor-toolbar.disabled-for-preview a:not(.no-disable) {
   color: #bbb !important;
   background: #fafafa !important;
@@ -77,13 +87,13 @@
 }
 
 .yakme_wrapper .editor-toolbar a {
-  margin: 0 0 0 3px;
+  margin: 0 2px;
   border-radius: 0;
   color: #666 !important;
 }
 
-.yakme_wrapper .editor-toolbar .separator + a {
-  margin: 0 0 0 -1px;
+.yakme_wrapper .editor-toolbar .separator + a:not(.kirby) {
+  margin: 0;
 }
 
 .yakme_wrapper.yakme_fixed .editor-toolbar .fa-font,
@@ -102,6 +112,7 @@
   background: #dfe9be;
   color: #93ab4e !important;
   border-color: #93ab4e;
+  margin: 0 3px !important;
 }
 
 .yakme_wrapper .editor-toolbar a.kirby:hover {
@@ -114,15 +125,6 @@
   margin: 0 8px;
   padding: 8px 0;
   border-left-color: #ddd;
-}
-
-.yakme_wrapper .editor-toolbar {
-  border-radius: 0;
-  background: #fff;
-  opacity: 1 !important;
-  border: 2px solid #ddd;
-  border-bottom: none;
-  padding: 0 0 0 2px;
 }
 
 .yakme_wrapper .editor-toolbar.fullscreen {
@@ -139,7 +141,44 @@
 .modal-content .yakme_wrapper .editor-toolbar .fa-font,
 .modal-content .yakme_wrapper .editor-toolbar .fa-columns,
 .modal-content .yakme_wrapper .editor-toolbar .fa-arrows-alt,
+.modal-content .yakme_wrapper .editor-toolbar .fa-hashtag,
 .modal-content .yakme_wrapper .editor-toolbar .separator:last-of-type {
+  display: none;
+}
+
+/* Hide elements, set by blueprint */
+
+.yakme_hide .editor-toolbar i.separator {
+  visibility: hidden;
+  margin: 0;
+  border: 0;
+}
+
+.yakme_hide .editor-toolbar .separator + a {
+  margin: 0 2px 0 0;
+}
+
+.yakme_hide.hide_bold .editor-toolbar .fa-bold,
+.yakme_hide.hide_italic .editor-toolbar .fa-italic,
+.yakme_hide.hide_heading .editor-toolbar .fa-header,
+.yakme_hide.hide_quote .editor-toolbar .fa-quote-left,
+.yakme_hide.hide_list .editor-toolbar [class*=fa-list],
+.yakme_hide.hide_list-ul .editor-toolbar .fa-list-ul,
+.yakme_hide.hide_list-ol .editor-toolbar .fa-list-ol,
+.yakme_hide.hide_table .editor-toolbar .fa-table,
+.yakme_hide.hide_divider .editor-toolbar .fa-minus,
+.yakme_hide.hide_link .editor-toolbar .fa-link:not(.kirby),
+.yakme_hide.hide_image .editor-toolbar .fa-picture-o:not(.kirby),
+.yakme_hide.hide_kirby .editor-toolbar .kirby,
+.yakme_hide.hide_kirby-mail .editor-toolbar .kirby.fa-enveloppe,
+.yakme_hide.hide_kirby-link .editor-toolbar .kirby.fa-link,
+.yakme_hide.hide_kirby-image .editor-toolbar .kirby.fa-picture-o,
+.yakme_hide.hide_kirby-video .editor-toolbar .kirby.fa-youtube-play,
+.yakme_hide.hide_typewriter .editor-toolbar .fa-font,
+.yakme_hide.hide_wysiwyg .editor-toolbar .fa-hashtag,
+.yakme_hide.hide_preview .editor-toolbar .fa-eye,
+.yakme_hide.hide_split .editor-toolbar .fa-columns,
+.yakme_hide.hide_fullscreen .editor-toolbar .fa-arrows-alt {
   display: none;
 }
 

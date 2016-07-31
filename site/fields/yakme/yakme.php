@@ -6,11 +6,11 @@ class YakmeField extends TextField {
 
   static public $assets = array(
     'css' => array(
-      'yakme.css',
+      'simplemde.css',
       'kirby.css'
     ),
     'js' => array(
-      'yakme.js',
+      'simplemde.js',
       'kirby.js'
     )
   );
@@ -33,6 +33,8 @@ class YakmeField extends TextField {
 
   }
 
+/* Create the textarea, that will become the editor */
+
   public function input() {
 
     $input = parent::input();
@@ -40,12 +42,42 @@ class YakmeField extends TextField {
     $input->removeAttr('type');
     $input->removeAttr('value');
     $input->html($this->value() ? htmlentities($this->value(), ENT_NOQUOTES, 'UTF-8') : false);
-    $input->addClass('yakme_editor');
     $input->data('field','yakmefield');
+    $input->addClass('yakme_editor');
+
 
     return $input;
 
   }
+
+/* Add class to wrapper field, that hides certain buttons in the toolbar */
+
+  public function element() {
+
+    $element = parent::element();
+
+    if(isset($this->hide)) {
+
+      if(count($this->hide) != 0) {
+
+        $hidden = $this->hide;
+
+          foreach ($hidden as &$value) {
+
+            $value = 'hide_' . $value;
+
+          }
+
+        $element->addClass('yakme_hide ' . implode(' ', $hidden));
+
+      }
+
+    }
+
+    return $element;
+
+  }
+
 }
 
 ?>

@@ -28,6 +28,12 @@
 - Option to style the editor / preview.
 - Fixes and tunes.
 
+#### Version 1.2.7 - 2016-07-31
+
+- Option to hide each individual button in the toolbar.
+- Live preview of a YouTube video.
+- Fixes and tunes.
+
 ****
 
 ### What is it?
@@ -62,9 +68,59 @@ fields:
   yakme_example:
     label: Yakme - Example
     type:  yakme
+    hide:
+      - bold
+      - italic
+      - heading
+      - quote
+      - list
+      - list-ul
+      - list-ol
+      - table
+      - divider
+      - link
+      - image
+      - kirby
+      - kirby-mail
+      - kirby-link
+      - kirby-image
+      - kirby-video
+      - typewriter
+      - wysiwyg
+      - preview
+      - split
+      - fullscreen
 ```
 
-The fieldtype is ```yakme``` and it accepts no additional options (besides the one you can set in ```config.php``` and by setting the field-preferences ( _font_ / _wysiwyg_ ) for each field alone).
+The fieldtype is ```yakme``` and you can hide any unwanted button, just check out the table below. Also you can add some (general) preferences by setting them in ```config.php```. Finally ypi can toggle each individual field-preference with the `font` and `wysiwyg` buttons (which are saved per field).
+
+| **Hide** | **Explain** |
+| -------- | -------- |
+| bold| Hide the bold / strong button |
+| italic| Hide the italic / em button |
+| heading| Hide the heading (H1, etc...) button |
+| quote| Hide the blockquote button |
+| list| Hide ALL list buttons |
+| list-ul| Hide the ul-list button |
+| list-ol| Hide the ol-list button |
+| table| Hide the table button |
+| divider| Hide the divider / hr button |
+| link| Hide the link button |
+| image| Hide the image button |
+| kirby| Hide ALL kirby-only buttons (the green ones) |
+| kirby-mail| Hide the kirby-mail button |
+| kirby-link| Hide the kirby-link button |
+| kirby-image| Hide the kirby-image button |
+| kirby-video| Hide the kirby-video button |
+| typewriter| Hide the typewriter / font-toggle button |
+| wysiwyg| Hide the WYSIWYG-button (experimental option) |
+| preview| Hide the preview button |
+| split| Hide the plit-button |
+| fullscreen| Hide the fullscreen-button |
+
+Remember; even when a button is hidden, you can access it's functionality by manually entering the markdown-code or pressing the shortcut for it.
+
+****
 
 Once set, the field can be rendered like this;
 
@@ -91,25 +147,29 @@ Every instance of a YAKME-field can have individual preferences;
 1. Fixed font or default font.
 2. Toggle (WYSIWYG) markdown codes.
 
-These settings are saved to the local machine in the localstorage of your browser.
+These settings are saved to the local device (`localstorage`).
+
+****
+
+If you want to make use of the `video` tag, please make sure you also added the `\site\tags\video\video.php` file to your project.
 
 ### Shortcuts
 
 | **Shortcut** | **Action** |
-| -------- | -------- | 
-| Ctrl-' | Blockquote | 
-| Ctrl-B | Bold | 
-| Ctrl-D | Delete line | 
-| Ctrl-E | Clear | 
-| Ctrl-H | Heading - | 
-| Ctrl-I | Italic | 
-| Ctrl-K | Link | 
-| Ctrl-L | Unordered List | 
-| Ctrl-P | Preview | 
-| Ctrl-Alt-C | Code | 
-| Ctrl-Alt-I | Image | 
-| Ctrl-Alt-L | Ordered List | 
-| Shift-Ctrl-H | Heading + | 
+| -------- | -------- |
+| Ctrl-' | Blockquote |
+| Ctrl-B | Bold |
+| Ctrl-D | Delete line |
+| Ctrl-E | Clear |
+| Ctrl-H | Heading - |
+| Ctrl-I | Italic |
+| Ctrl-K | Link |
+| Ctrl-L | Unordered List |
+| Ctrl-P | Preview |
+| Ctrl-Alt-C | Code |
+| Ctrl-Alt-I | Image |
+| Ctrl-Alt-L | Ordered List |
+| Shift-Ctrl-H | Heading + |
 | F9 | Sideview |
 | F11 | Fullscreen |
 
@@ -146,7 +206,7 @@ c::set('yakme_images', 1);
 ```
 A check will be performed when previewing markdown-images. When an images does not exist, a error-sign is showed.
 
-**Please note, Kirby image-tags can not be validated.**
+**Please note, Kirby image-tags can not (yet) be validated.**
 
 ****
 
@@ -157,9 +217,11 @@ This will load the (demo) css-file and style both the editor and previewmode.
 
 ###Known issues###
 
-- Kirby-tags are supported, but not rendered in the live-preview (working on it...).
+- Kirby-tags are supported, but not (yet) rendered in the live-preview.
 - Images are only rendered in the live-preview with a full url.
 - Turning of the markdown codes (hastag icon) do not show if text is selected / can hide the cursor.
+- Some issues with the field in a modal (but it does work in a modal).
+- Video-preview is only shown in preview-mode (not splitscreen-mode).
 
 ****
 
@@ -178,3 +240,7 @@ This will load the (demo) css-file and style both the editor and previewmode.
 ![Kirby - YAKME](kirby_yakme-styling.gif "Kirby - YAKME, styling")
 
 *Kirby YAKME - styling.*
+
+![Kirby - YAKME](kirby_yakme-video.gif "Kirby - YAKME, video")
+
+*Kirby YAKME - video.*
