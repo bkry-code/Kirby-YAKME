@@ -96,27 +96,27 @@ The fieldtype is ```yakme``` and you can hide any unwanted button, just check ou
 
 | **Hide** | **Explain** |
 | -------- | -------- |
-| bold| Hide the bold / strong button |
-| italic| Hide the italic / em button |
-| heading| Hide the heading (H1, etc...) button |
-| quote| Hide the blockquote button |
-| list| Hide ALL list buttons |
-| list-ul| Hide the ul-list button |
-| list-ol| Hide the ol-list button |
-| table| Hide the table button |
-| divider| Hide the divider / hr button |
-| link| Hide the link button |
-| image| Hide the image button |
-| kirby| Hide ALL kirby-only buttons (the green ones) |
-| kirby-mail| Hide the kirby-mail button |
-| kirby-link| Hide the kirby-link button |
-| kirby-image| Hide the kirby-image button |
-| kirby-video| Hide the kirby-video button |
-| typewriter| Hide the typewriter / font-toggle button |
-| wysiwyg| Hide the WYSIWYG-button (experimental option) |
-| preview| Hide the preview button |
-| split| Hide the plit-button |
-| fullscreen| Hide the fullscreen-button |
+| bold | Hide the bold / strong button |
+| italic | Hide the italic / em button |
+| heading | Hide the heading (H1, etc...) button |
+| quote | Hide the blockquote button |
+| list | Hide ALL list buttons |
+| list-ul | Hide the ul-list button |
+| list-ol | Hide the ol-list button |
+| table | Hide the table button |
+| divider | Hide the divider / hr button |
+| link | Hide the link button |
+| image | Hide the image button |
+| kirby | Hide ALL kirby-only buttons (the green ones) |
+| kirby-mail | Hide the kirby-mail button |
+| kirby-link | Hide the kirby-link button |
+| kirby-image | Hide the kirby-image button |
+| kirby-video | Hide the kirby-video button |
+| typewriter | Hide the typewriter / font-toggle button |
+| wysiwyg | Hide the WYSIWYG-button (experimental option) |
+| preview | Hide the preview button |
+| split | Hide the plit-button |
+| fullscreen | Hide the fullscreen-button |
 
 Remember; even when a button is hidden, you can access it's functionality by manually entering the markdown-code or pressing the shortcut for it.
 
