@@ -45,31 +45,44 @@ class YakmeField extends TextField {
     $input->data('field','yakmefield');
     $input->addClass('yakme_editor');
 
-
     return $input;
 
   }
 
-/* Add class to wrapper field, that hides certain buttons in the toolbar */
+/* Add class to wrapper field, that show | hide certain buttons in the toolbar */
+
+/* Show buttons, always wins */
 
   public function element() {
 
     $element = parent::element();
 
-    if(isset($this->hide)) {
+    if(isset($this->show)) {
+
+      if(count($this->show) != 0) {
+        $visible = $this->show;
+
+          foreach ($visible as &$value) {
+            $value =  $value . '_show';
+          }
+
+        $element->addClass('yakme_show ' . implode(' ', $visible));
+      }
+
+    }
+
+/* Hide button, only when there is no show option */
+
+    else if(isset($this->hide)) {
 
       if(count($this->hide) != 0) {
-
         $hidden = $this->hide;
 
           foreach ($hidden as &$value) {
-
-            $value = 'hide_' . $value;
-
+            $value = $value . '_hide';
           }
 
         $element->addClass('yakme_hide ' . implode(' ', $hidden));
-
       }
 
     }

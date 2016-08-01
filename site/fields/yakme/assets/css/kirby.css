@@ -70,7 +70,6 @@
 /* 2. Toolbar */
 /* ---------------------- */
 
-
 .yakme_wrapper .editor-toolbar {
   border-radius: 0;
   background: #fff;
@@ -146,40 +145,67 @@
   display: none;
 }
 
-/* Hide elements, set by blueprint */
+/* Show | hide elements, set by blueprint */
 
+.yakme_show .editor-toolbar i.separator,
 .yakme_hide .editor-toolbar i.separator {
   visibility: hidden;
   margin: 0;
   border: 0;
 }
 
+.yakme_show .editor-toolbar .separator + a,
 .yakme_hide .editor-toolbar .separator + a {
   margin: 0 2px 0 0;
 }
 
-.yakme_hide.hide_bold .editor-toolbar .fa-bold,
-.yakme_hide.hide_italic .editor-toolbar .fa-italic,
-.yakme_hide.hide_heading .editor-toolbar .fa-header,
-.yakme_hide.hide_quote .editor-toolbar .fa-quote-left,
-.yakme_hide.hide_list .editor-toolbar [class*=fa-list],
-.yakme_hide.hide_list-ul .editor-toolbar .fa-list-ul,
-.yakme_hide.hide_list-ol .editor-toolbar .fa-list-ol,
-.yakme_hide.hide_table .editor-toolbar .fa-table,
-.yakme_hide.hide_divider .editor-toolbar .fa-minus,
-.yakme_hide.hide_link .editor-toolbar .fa-link:not(.kirby),
-.yakme_hide.hide_image .editor-toolbar .fa-picture-o:not(.kirby),
-.yakme_hide.hide_kirby .editor-toolbar .kirby,
-.yakme_hide.hide_kirby-mail .editor-toolbar .kirby.fa-enveloppe,
-.yakme_hide.hide_kirby-link .editor-toolbar .kirby.fa-link,
-.yakme_hide.hide_kirby-image .editor-toolbar .kirby.fa-picture-o,
-.yakme_hide.hide_kirby-video .editor-toolbar .kirby.fa-youtube-play,
-.yakme_hide.hide_typewriter .editor-toolbar .fa-font,
-.yakme_hide.hide_wysiwyg .editor-toolbar .fa-hashtag,
-.yakme_hide.hide_preview .editor-toolbar .fa-eye,
-.yakme_hide.hide_split .editor-toolbar .fa-columns,
-.yakme_hide.hide_fullscreen .editor-toolbar .fa-arrows-alt {
-  display: none;
+.yakme_show .editor-toolbar a[class*=fa],
+.yakme_hide.bold_hide .editor-toolbar .fa-bold,
+.yakme_hide.italic_hide .editor-toolbar .fa-italic,
+.yakme_hide.heading_hide .editor-toolbar .fa-header,
+.yakme_hide.quote_hide .editor-toolbar .fa-quote-left,
+.yakme_hide.list_hide .editor-toolbar [class*=fa-list],
+.yakme_hide.list-ul_hide .editor-toolbar .fa-list-ul,
+.yakme_hide.list-ol_hide .editor-toolbar .fa-list-ol,
+.yakme_hide.table_hide .editor-toolbar .fa-table,
+.yakme_hide.divider_hide .editor-toolbar .fa-minus,
+.yakme_hide.link_hide .editor-toolbar .fa-link:not(.kirby),
+.yakme_hide.image_hide .editor-toolbar .fa-picture-o:not(.kirby),
+.yakme_hide.kirby_hide .editor-toolbar .kirby,
+.yakme_hide.kirby-mail_hide .editor-toolbar .kirby.fa-enveloppe,
+.yakme_hide.kirby-link_hide .editor-toolbar .kirby.fa-link,
+.yakme_hide.kirby-image_hide .editor-toolbar .kirby.fa-picture-o,
+.yakme_hide.kirby-video_hide .editor-toolbar .kirby.fa-youtube-play,
+.yakme_hide.font_hide .editor-toolbar .fa-font,
+.yakme_hide.wysiwyg_hide .editor-toolbar .fa-hashtag,
+.yakme_hide.preview_hide .editor-toolbar .fa-eye,
+.yakme_hide.split_hide .editor-toolbar .fa-columns,
+.yakme_hide.fullscreen_hide .editor-toolbar .fa-arrows-alt {
+  display: none !important;
+}
+
+.yakme_show.bold_show .editor-toolbar .fa-bold,
+.yakme_show.italic_show .editor-toolbar .fa-italic,
+.yakme_show.heading_show .editor-toolbar .fa-header,
+.yakme_show.quote_show .editor-toolbar .fa-quote-left,
+.yakme_show.list_show .editor-toolbar [class*=fa-list],
+.yakme_show.list-ul_show .editor-toolbar .fa-list-ul,
+.yakme_show.list-ol_show .editor-toolbar .fa-list-ol,
+.yakme_show.table_show .editor-toolbar .fa-table,
+.yakme_show.divider_show .editor-toolbar .fa-minus,
+.yakme_show.link_show .editor-toolbar .fa-link:not(.kirby),
+.yakme_show.image_show .editor-toolbar .fa-picture-o:not(.kirby),
+.yakme_show.kirby_show .editor-toolbar .kirby,
+.yakme_show.kirby-mail_show .editor-toolbar .kirby.fa-enveloppe,
+.yakme_show.kirby-link_show .editor-toolbar .kirby.fa-link,
+.yakme_show.kirby-image_show .editor-toolbar .kirby.fa-picture-o,
+.yakme_show.kirby-video_show .editor-toolbar .kirby.fa-youtube-play,
+.yakme_show.font_show .editor-toolbar .fa-font,
+.yakme_show.wysiwyg_show .editor-toolbar .fa-hashtag,
+.yakme_show.preview_show .editor-toolbar .fa-eye,
+.yakme_show.split_show .editor-toolbar .fa-columns,
+.yakme_show.fullscreen_show .editor-toolbar .fa-arrows-alt {
+  display: inline-block !important;
 }
 
 /* ---------------------- */

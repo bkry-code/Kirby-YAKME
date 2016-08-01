@@ -159,7 +159,7 @@ var yakme_ini = function (index) {
     }
   });
 
-  simplemde.codemirror.on("change", function(){
+  simplemde.codemirror.on("change", function() {
 
     yakme_video_check();
 

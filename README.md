@@ -34,6 +34,12 @@
 - Live preview of a YouTube video.
 - Fixes and tunes.
 
+#### Version 1.3.1 - 2016-08-01
+
+- Option to show / hide each individual button in the toolbar.
+- Typewriter-tag renamed to general font-tag.
+- Minor fixes and tunes.
+
 ****
 
 ### What is it?
@@ -68,6 +74,7 @@ fields:
   yakme_example:
     label: Yakme - Example
     type:  yakme
+
     hide:
       - bold
       - italic
@@ -85,40 +92,67 @@ fields:
       - kirby-link
       - kirby-image
       - kirby-video
-      - typewriter
+      - font
+      - wysiwyg
+      - preview
+      - split
+      - fullscreen
+
+    show:
+      - bold
+      - italic
+      - heading
+      - quote
+      - list
+      - list-ul
+      - list-ol
+      - table
+      - divider
+      - link
+      - image
+      - kirby
+      - kirby-mail
+      - kirby-link
+      - kirby-image
+      - kirby-video
+      - font
       - wysiwyg
       - preview
       - split
       - fullscreen
 ```
 
-The fieldtype is ```yakme``` and you can hide any unwanted button, just check out the table below. Also you can add some (general) preferences by setting them in ```config.php```. Finally ypi can toggle each individual field-preference with the `font` and `wysiwyg` buttons (which are saved per field).
+The fieldtype is ```yakme``` and you can hide / show any button; just check out the table below.
 
-| **Hide** | **Explain** |
+| **Option** | **Explain** |
 | -------- | -------- |
-| bold | Hide the bold / strong button |
-| italic | Hide the italic / em button |
-| heading | Hide the heading (H1, etc...) button |
-| quote | Hide the blockquote button |
-| list | Hide ALL list buttons |
-| list-ul | Hide the ul-list button |
-| list-ol | Hide the ol-list button |
-| table | Hide the table button |
-| divider | Hide the divider / hr button |
-| link | Hide the link button |
-| image | Hide the image button |
-| kirby | Hide ALL kirby-only buttons (the green ones) |
-| kirby-mail | Hide the kirby-mail button |
-| kirby-link | Hide the kirby-link button |
-| kirby-image | Hide the kirby-image button |
-| kirby-video | Hide the kirby-video button |
-| typewriter | Hide the typewriter / font-toggle button |
-| wysiwyg | Hide the WYSIWYG-button (experimental option) |
-| preview | Hide the preview button |
-| split | Hide the plit-button |
-| fullscreen | Hide the fullscreen-button |
+| bold | Hide / show the bold / strong button |
+| italic | Hide / show the italic / em button |
+| heading | Hide / show the heading (H1, etc...) button |
+| quote | Hide / show the blockquote button |
+| list | Hide / show ALL list buttons |
+| list-ul | Hide / show the ul-list button |
+| list-ol | Hide / show the ol-list button |
+| table | Hide / show the table button |
+| divider | Hide / show the divider / hr button |
+| link | Hide / show the link button |
+| image | Hide / show the image button |
+| kirby | Hide / show ALL kirby-only buttons (the green ones) |
+| kirby-mail | Hide / show the kirby-mail button |
+| kirby-link | Hide / show the kirby-link button |
+| kirby-image | Hide / show the kirby-image button |
+| kirby-video | Hide / show the kirby-video button |
+| typewriter | Hide / show the typewriter / font-toggle button |
+| wysiwyg | Hide / show the WYSIWYG-button (experimental option) |
+| preview | Hide / show the preview button |
+| split | Hide / show the plit-button |
+| fullscreen | Hide / show the fullscreen-button |
 
-Remember; even when a button is hidden, you can access it's functionality by manually entering the markdown-code or pressing the shortcut for it.
+Remember; even when a button is hidden, you can access it's functionality by manually entering the markdown-code or pressing the shortcut (see later in this document) for it.
+
+In order to avoid conflicts, when both `hide` and `show` are set, `show` will always win (see example at https://forum.getkirby.com/t/kirby-yakme-yet-another-kirby-markdown-editor/4677/58).
+
+Also you can add some (general) preferences by setting them in ```config.php```. Finally you can toggle each individual field-preference with the `font` and `wysiwyg` buttons (which are saved per field).
 
 ****
 
