@@ -145,7 +145,7 @@ The fieldtype is ```yakme``` and you can hide / show any button; just check out 
 | font | Hide / show the font (monospace / proportional) button |
 | wysiwyg | Hide / show the WYSIWYG-button (experimental) |
 | preview | Hide / show the preview button |
-| split | Hide / show the plit-button |
+| split | Hide / show the splitscreen-button |
 | fullscreen | Hide / show the fullscreen-button |
 
 Remember; even when a button is hidden, you can access it's functionality by manually entering the markdown-code or pressing the shortcut (see later in this document) for it.
