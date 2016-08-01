@@ -143,7 +143,7 @@ The fieldtype is ```yakme``` and you can hide / show any button; just check out 
 | kirby-image | Hide / show the kirby-image button |
 | kirby-video | Hide / show the kirby-video button |
 | font | Hide / Hide / show the font (monospace / proportional) button |
-| wysiwyg | Hide / show the WYSIWYG-button (experimental option) |
+| wysiwyg | Hide / show the WYSIWYG-button (experimental) |
 | preview | Hide / show the preview button |
 | split | Hide / show the plit-button |
 | fullscreen | Hide / show the fullscreen-button |
